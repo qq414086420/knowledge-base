@@ -52,6 +52,9 @@ Model Context Protocol 服务器的文档、集成和自定义实现。
 ### tools-integration/
 工具集成、自动化脚本和跨平台配置。
 
+### im-channel-architecture-comparison.md
+Claude Code Channels / cc-connect / OpenClaw 三种 AI Agent 接入 IM 平台的架构方案对比，含飞书集成建议和 Issue #36800 分析。
+
 ---
 
 ## 📝 添加新报告
@@ -90,4 +93,4 @@ Model Context Protocol 服务器的文档、集成和自定义实现。
 
 ---
 
-**最后更新：** 2026-03-22
+**最后更新：** 2026-04-06
