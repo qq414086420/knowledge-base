@@ -1,95 +1,46 @@
-# 📚 文档与分析报告
+# Knowledge Base
 
-本目录包含按主题组织的研究报告、分析文档和技术调查。
+研究文档与分析报告，按主题分目录组织。
 
-## 📂 目录结构
+## 目录索引
 
-```
-docs/
-├── ai-memory-systems/          # AI agent 记忆与自学习系统
-├── mcp-servers/                # Model Context Protocol 服务器和工具
-├── proxy-configurations/       # 网络代理配置方案
-├── workflow-patterns/          # 开发工作流模式和最佳实践
-└── tools-integration/          # 工具集成和自动化配置
-```
+| 目录 | 主题 | 文件数 |
+|------|------|--------|
+| [ai-memory-systems/](ai-memory-systems/) | AI Agent 记忆系统、知识图谱、自学习架构 | 3 |
+| [ai-agent-toolchain-sharing/](ai-agent-toolchain-sharing/) | AI 编码 Agent 工具链搭建分享（大纲 + 附录） | 2 |
+| [multi-agent-system/](multi-agent-system/) | 多 Agent 系统架构、认证、通信、对比 | 5 |
+| [im-channel/](im-channel/) | IM Channel 集成：架构对比 + 飞书插件设计 | 2 |
+| [codebase-analysis/](codebase-analysis/) | 代码仓分析 MCP 工具深度技术报告 | 1 |
 
-## 📋 文件命名规范
-
-- **调查报告：** `主题-调查-YYYY-MM-DD.md`
-- **对比分析：** `主题-对比.md`
-- **深度分析：** `主题-分析-*.md`
-- **指南文档：** `主题-指南.md` 或 `主题-教程.md`
-
-## 🎯 主题说明
+## 各目录详情
 
 ### ai-memory-systems/
-AI agent 记忆系统、知识图谱和自学习架构的研究。
+AI agent 记忆系统调研与对比。
+- `AI-MEMORY-AND-LEARNING-MCP-SURVEY.md` — MCP 记忆系统调查
+- `AI-MEMORY-SYSTEMS-COMPARISON.md` — Zep / Letta / Mem0 等系统对比
+- `CLAUDECEPTION-调查报告.md` — Claudeception 调查报告
 
-**主要系统：**
-- Zep（时序知识图谱）
-- Letta/MemGPT（agent 自控记忆）
-- Mem0（生产就绪的记忆层）
-- MCP Memory Servers
+### ai-agent-toolchain-sharing/
+面向程序员的 AI 编码 Agent 工具链分享材料。
+- `outline.md` — 30 分钟分享大纲
+- `appendix-proxy-wrapper.md` — 附录：MCP 代理包装器方案
 
-**当前文件：**
-- `AI-MEMORY-AND-LEARNING-MCP-SURVEY.md` - MCP 调查报告
-- `AI-MEMORY-SYSTEMS-COMPARISON.md` - 系统对比分析
+### multi-agent-system/
+多 Agent 系统架构研究。
+- `01-architecture-patterns.md` — 架构模式
+- `02-authentication.md` — 认证机制
+- `03-communication-patterns.md` — 通信模式
+- `04-comparison.md` — 方案对比
+- `README.md` — 系列概览
 
-### mcp-servers/
-Model Context Protocol 服务器的文档、集成和自定义实现。
+### im-channel/
+AI Agent 接入 IM 平台的技术方案。
+- `im-channel-architecture-comparison.md` — Claude Code Channels / cc-connect / OpenClaw 架构对比，含 Issue #36800 分析
+- `cc-feishu-channel-design.md` — Claude Code 飞书 Channel 插件设计文档
 
-### proxy-configurations/
-网络代理配置方案、包装器模式和配置指南。
-
-**示例：**
-- MCP server 代理包装器
-- Node.js fetch 代理配置
-- WSL 网络配置
-
-### workflow-patterns/
-开发工作流模式、自动化策略和最佳实践。
-
-### tools-integration/
-工具集成、自动化脚本和跨平台配置。
-
-### im-channel-architecture-comparison.md
-Claude Code Channels / cc-connect / OpenClaw 三种 AI Agent 接入 IM 平台的架构方案对比，含飞书集成建议和 Issue #36800 分析。
-
----
-
-## 📝 添加新报告
-
-创建新分析报告时：
-
-1. **选择合适的文件夹** 根据主要主题
-2. **遵循命名规范**（见上方）
-3. **包含元数据头部**：
-   ```markdown
-   # 报告标题
-
-   **日期：** YYYY-MM-DD
-   **作者：** Claude Code
-   **分类：** 调查 | 分析 | 对比 | 指南
-   **关键词：** 关键词1, 关键词2, 关键词3
-   ```
-
-4. **更新此 README** 如果添加新的主题文件夹
-
----
-
-## 📊 已完成的研究
-
-### AI Memory Systems (2026-03-22)
-- ✅ 12+ 记忆系统调查
-- ✅ Zep vs Letta vs Mem0 对比
-- ✅ 与 Continuous Learning v2 的对比分析
-- ✅ 改进建议（短期/中期/长期）
-
-### MCP Server Proxy Wrapper (2026-03-22)
-- ✅ Node.js fetch 代理问题分析
-- ✅ undici ProxyAgent 解决方案
-- ✅ Wrapper 模式实施指南
-- ✅ 代码模板和配置示例
+### codebase-analysis/
+代码仓理解与分析工具研究。
+- `codebase-analysis-mcp-tools-report.md` — 5 款代码仓分析 MCP 工具深度技术报告
 
 ---
 
